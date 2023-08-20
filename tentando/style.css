@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #ffcb74;
+    background-color: #2f2f2f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chessboard{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #f6f6f6;
+    width: 800px;
+    height: 800px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.cell:hover{
+    background-color: rgba(0, 0, 0, 0.10);
+
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    background-color: #2f2f2f;
+    justify-content: center;
+    align-items: center;
+}
+.modal button{
+    position: absolute;
+    top:10px;
+    left: 280px;
+}

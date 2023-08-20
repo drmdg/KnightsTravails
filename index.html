@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knights Travails</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/knight_icon.png" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="modalContainer">
+        <div id="modalContent"></div>
+      </div>
+      <button id="modalButton" hidden>Show Modal</button>
+      <div class="header">
+        <div class="title-container">
+          <h1 class="hero">Knights Travails</h1>
+        </div>
+      </div>
+      <div class="chessboard" id="chessboard"></div>
+      <div class="position-container">
+        <div class="starting-container">
+          <label for="startPos">Starting: </label>
+          <div id="startPosition"></div>
+        </div>
+        <div class="ending-container">
+          <label for="endPos">Ending: </label>
+          <div id="endPosition"></div>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button id="submitPos" class="submit-btn">Find Path</button>
+        <button id="resetPos" class="reset-btn">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
